@@ -3,9 +3,9 @@ import React, { useState } from "react";
 function App() {
   const [people, setPeople] = useState([
     {
-      name: "John",
-      lastName: "Doe",
-      age: 30,
+      name: "Marcos",
+      lastName: "Mora",
+      age: 23,
       favouriteFood: "Pizza",
       favouriteColour: "Red",
       counter: 0,
