@@ -23,6 +23,7 @@ function App() {
         setName(event.target.value);
       }}
       />
+      &nbsp;
       <input
       type="text"
       name="lastName"
@@ -30,13 +31,8 @@ function App() {
         setLastname(event.target.value);
       }}
       />
-      <button
-      onClick={() => {
-        setPeople((current) => [{ name, lastName }, ...current]);
-      }}
-      >
-        Add user
-      </button>
+      <button onClick={() => {setPeople((current) => [{ name, lastName }, ...current]);}}>Add user</button>
+      
       <ul>
       {people.map((person, idx) => (
         <li id={idx}>{`${person.name} ${person.lastName}`}</li>
